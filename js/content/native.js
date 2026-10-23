@@ -1,0 +1,108 @@
+// Medicine-wheel birth totems as popularised by Sun Bear & Wabun (1980).
+// Dates are for the Northern Hemisphere; Southern Hemisphere births are shifted six months.
+
+export const CLANS = {
+  Turtle: { element: 'Earth', note: 'The Turtle clan (Earth) brings stability, patience and a grounding influence on others.' },
+  Frog: { element: 'Water', note: 'The Frog clan (Water) brings emotional depth, healing and a flowing adaptability.' },
+  Thunderbird: { element: 'Fire', note: 'The Thunderbird clan (Fire) brings passion, energy and the drive to transform.' },
+  Butterfly: { element: 'Air', note: 'The Butterfly clan (Air) brings ideas, communication and constant transformation.' },
+};
+
+export const TOTEMS = [
+  {
+    animal: 'Snow Goose', alt: 'Goose', moon: 'Earth Renewal Moon', start: [12, 22], end: [1, 19], clan: 'Turtle', direction: 'North', western: 'Capricorn',
+    personality: 'Snow Goose people are determined, ambitious and persevering. Like the goose flying thousands of miles to its destination, you set your sights high and arrive through sheer dedication.',
+    strengths: 'Driven, responsible and dutiful, you are someone others trust to see things through.',
+    shadow: 'You may become rigid or overly serious. Let joy share the journey.',
+    lesson: 'To balance ambition with warmth and play.',
+    themes: ['ambitious', 'disciplined', 'loyal'], challenges: ['workaholism', 'rigidity'],
+  },
+  {
+    animal: 'Otter', alt: 'Otter', moon: 'Rest and Cleansing Moon', start: [1, 20], end: [2, 18], clan: 'Butterfly', direction: 'North', western: 'Aquarius',
+    personality: 'Otter people are original, playful and humanitarian. You see the world a little differently from everyone else and bring innovation and good humour to every community you join.',
+    strengths: 'Inventive, friendly and perceptive, you are a loyal friend and an independent thinker.',
+    shadow: 'You can be unpredictable or emotionally detached. Let others into your inner world.',
+    lesson: 'To ground brilliant ideas in heartfelt connection.',
+    themes: ['visionary', 'social', 'independent'], challenges: ['aloofness'],
+  },
+  {
+    animal: 'Wolf', alt: 'Cougar', moon: 'Big Winds Moon', start: [2, 19], end: [3, 20], clan: 'Frog', direction: 'North', western: 'Pisces',
+    personality: 'Wolf people are sensitive, compassionate and intuitive. Deeply devoted to their loved ones, you combine a free spirit with a strong need for emotional connection.',
+    strengths: 'Generous, gentle and wise, you are a natural healer and a loyal companion.',
+    shadow: 'You may absorb others’ pain or retreat to protect yourself. Boundaries keep your compassion sustainable.',
+    lesson: 'To honour your own needs as faithfully as others’.',
+    themes: ['intuitive', 'nurturing', 'spiritual'], challenges: ['escapism', 'people-pleasing'],
+  },
+  {
+    animal: 'Falcon', alt: 'Red Hawk', moon: 'Budding Trees Moon', start: [3, 21], end: [4, 19], clan: 'Thunderbird', direction: 'East', western: 'Aries',
+    personality: 'Falcon people are natural leaders, quick to act and full of passion. You seize opportunities with precision and inspire others with your confidence and initiative.',
+    strengths: 'Courageous, energetic and decisive, you get things moving.',
+    shadow: 'You can be impatient or arrogant. Listening makes your leadership wiser.',
+    lesson: 'To temper speed with patience and humility.',
+    themes: ['ambitious', 'resilient', 'independent'], challenges: ['impatience', 'pride'],
+  },
+  {
+    animal: 'Beaver', alt: 'Beaver', moon: 'Frogs Return Moon', start: [4, 20], end: [5, 20], clan: 'Turtle', direction: 'East', western: 'Taurus',
+    personality: 'Beaver people are industrious builders who create order, security and comfort. Practical and methodical, you work steadily toward a well-made life.',
+    strengths: 'Reliable, resourceful and persistent, you build things that last.',
+    shadow: 'You can be possessive or stubborn. Openness to new ways strengthens your foundations.',
+    lesson: 'To trust that change can also build security.',
+    themes: ['grounded', 'disciplined', 'loyal'], challenges: ['stubbornness', 'possessiveness'],
+  },
+  {
+    animal: 'Deer', alt: 'Deer', moon: 'Cornplanting Moon', start: [5, 21], end: [6, 20], clan: 'Butterfly', direction: 'East', western: 'Gemini',
+    personality: 'Deer people are gentle, witty and quick. You delight in conversation and new ideas, and your sensitivity and charm make you easy to love.',
+    strengths: 'Bright, kind and adaptable, you bring lightness and inspiration to others.',
+    shadow: 'You may be restless or inconsistent. Depth grows from staying with what matters.',
+    lesson: 'To pair curiosity with commitment.',
+    themes: ['communicative', 'social', 'creative'], challenges: ['restlessness', 'scattered'],
+  },
+  {
+    animal: 'Woodpecker', alt: 'Flicker', moon: 'Strong Sun Moon', start: [6, 21], end: [7, 22], clan: 'Frog', direction: 'South', western: 'Cancer',
+    personality: 'Woodpecker people are nurturing, devoted and home-loving. You create rhythm and security for those you love and give generously of your time and care.',
+    strengths: 'Empathetic, loyal and resourceful, you are the heart of your family or community.',
+    shadow: 'You may become possessive or over-protective. Letting loved ones grow is also love.',
+    lesson: 'To nurture without holding on too tightly.',
+    themes: ['nurturing', 'loyal', 'intuitive'], challenges: ['possessiveness', 'moodiness'],
+  },
+  {
+    animal: 'Salmon', alt: 'Sturgeon', moon: 'Ripe Berries Moon', start: [7, 23], end: [8, 22], clan: 'Thunderbird', direction: 'South', western: 'Leo',
+    personality: 'Salmon people are energetic, confident and generous. Like the salmon swimming upstream, you pursue your goals with passion and inspire others with your warmth and enthusiasm.',
+    strengths: 'Charismatic, determined and big-hearted, you lead with vitality and generosity.',
+    shadow: 'You can be self-centred or crave approval. Humility deepens your influence.',
+    lesson: 'To shine for others as well as for yourself.',
+    themes: ['ambitious', 'creative', 'resilient'], challenges: ['pride'],
+  },
+  {
+    animal: 'Brown Bear', alt: 'Bear', moon: 'Harvest Moon', start: [8, 23], end: [9, 22], clan: 'Turtle', direction: 'South', western: 'Virgo',
+    personality: 'Bear is an individual whose outer personality is one of quiet observation. You mentally sift and sort through your experiences, seeking to understand and categorise everything, and you possess clarity and persistence in your search for truth.',
+    strengths: 'Practical, industrious and reliable, you are naturally detail-oriented and others trust you to dot every i and cross every t. Humble, fair-minded and warm in a considered way, you help those you love in very practical ways.',
+    shadow: 'Your focus on detail can turn finicky or judgemental, and you may resist change or hibernate too long in your comfort zone. Not everything can be understood by logic alone.',
+    lesson: 'To trust intuition alongside reason, and to embrace transformation.',
+    themes: ['analytical', 'grounded', 'loyal', 'principled'], challenges: ['perfectionism', 'rigidity'],
+  },
+  {
+    animal: 'Raven', alt: 'Raven', moon: 'Ducks Fly Moon', start: [9, 23], end: [10, 22], clan: 'Butterfly', direction: 'West', western: 'Libra',
+    personality: 'Raven people are charming, idealistic and diplomatic. You seek balance and fairness and have a gift for bringing people and ideas together.',
+    strengths: 'Gracious, creative and fair, you are a natural mediator and a delightful companion.',
+    shadow: 'You may be indecisive or overly dependent on others’ approval. Your own judgement is trustworthy.',
+    lesson: 'To find harmony within as well as around you.',
+    themes: ['harmonious', 'social', 'creative'], challenges: ['indecision'],
+  },
+  {
+    animal: 'Snake', alt: 'Snake', moon: 'Freeze Up Moon', start: [10, 23], end: [11, 22], clan: 'Frog', direction: 'West', western: 'Scorpio',
+    personality: 'Snake people are intense, mysterious and transformative. You understand cycles of death and rebirth and have an innate healing power and a deep connection to the unseen.',
+    strengths: 'Perceptive, determined and passionate, you can transform pain into wisdom.',
+    shadow: 'You may be secretive or vengeful when hurt. Forgiveness frees your power.',
+    lesson: 'To shed old skins gracefully and trust the process of renewal.',
+    themes: ['intense', 'intuitive', 'spiritual'], challenges: ['guardedness', 'possessiveness'],
+  },
+  {
+    animal: 'Owl', alt: 'Elk', moon: 'Long Snows Moon', start: [11, 23], end: [12, 21], clan: 'Thunderbird', direction: 'West', western: 'Sagittarius',
+    personality: 'Owl people are adventurous, wise and free-spirited. You seek truth and meaning, love exploring new territory and share your discoveries with infectious enthusiasm.',
+    strengths: 'Optimistic, insightful and generous, you are a natural teacher and seeker.',
+    shadow: 'You may be restless or tactless. Patience grounds your wisdom.',
+    lesson: 'To balance freedom with commitment.',
+    themes: ['adventurous', 'spiritual', 'visionary'], challenges: ['restlessness', 'bluntness'],
+  },
+];
