@@ -26,7 +26,7 @@ The structure of a generated profile is documented in [`docs/profile-template.md
 npm start            # serves the app at http://localhost:8000
 ```
 
-The app is a static site, so any static host works, including GitHub Pages: publish the repository root. ES modules need to be served over HTTP. To get a single file that opens directly from disk, build it:
+The app is a static site, so any static host works. Pushes to `main` deploy it to GitHub Pages through `.github/workflows/deploy.yml`, which runs the tests and publishes the single-file build. To enable this, set *Settings → Pages → Source* to **GitHub Actions**. ES modules need to be served over HTTP. To get a single file that opens directly from disk, build it:
 
 ```bash
 npm install
